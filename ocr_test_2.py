@@ -4,7 +4,7 @@ import numpy as np
 import requests
 
 # 다운받을 이미지 url
-url = "https://dispatch.cdnser.be/cms-content/uploads/2020/04/09/a26f4b7b-9769-49dd-aed3-b7067fbc5a8c.jpg"
+url = "https://storage.googleapis.com/wm_timedata/time_image.jpg"
 
 image_nparray = np.asarray(bytearray(requests.get(url).content), dtype=np.uint8)
 
