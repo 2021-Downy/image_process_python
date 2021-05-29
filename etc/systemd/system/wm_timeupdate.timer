@@ -1,0 +1,9 @@
+[Unit]
+Description=WM time update timer
+Requires=wm_timeupdate.service
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+
+[Install]
+WantedBy=timers.target

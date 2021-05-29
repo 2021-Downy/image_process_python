@@ -1,0 +1,10 @@
+[Unit]
+Description=Service for WM time update
+
+[Service]
+Type=oneshot
+WorkingDirectory=/usr/local/bin
+ExecStart=/usr/local/bin/wm_time_update.sh --debug start
+
+[Install]
+WantedBy=multi-user.target
